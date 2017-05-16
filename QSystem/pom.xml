@@ -15,9 +15,7 @@
             <phase>generate-sources</phase>
             <configuration>
               <target>
- 
                 <ant target="jar" />
- 
               </target>
             </configuration>
             <goals>
@@ -25,6 +23,15 @@
             </goals>
           </execution>
         </executions>
+		<dependencies>
+        <dependency>
+            <groupId>com.sun</groupId>
+            <artifactId>tools</artifactId>
+            <version>1.8.0</version>
+            <scope>system</scope>
+            <systemPath>${env.JAVA_HOME}/lib/tools.jar</systemPath>
+        </dependency>
+    </dependencies>
       </plugin>
     </plugins>
   </build>
