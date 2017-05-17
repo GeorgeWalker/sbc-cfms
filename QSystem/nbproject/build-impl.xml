@@ -286,6 +286,7 @@ is divided into following sections:
                     <src>
                         <dirset dir="@{gensrcdir}" erroronmissingdir="false">
                             <include name="*"/>
+							<exclude name="ru/apertum/qsystem/client/**"/>
                         </dirset>
                     </src>
                     <classpath>
@@ -326,6 +327,7 @@ is divided into following sections:
                     <src>
                         <dirset dir="@{gensrcdir}" erroronmissingdir="false">
                             <include name="*"/>
+							<exclude name="ru/apertum/qsystem/client/**"/>
                         </dirset>
                     </src>
                     <classpath>
