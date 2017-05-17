@@ -378,7 +378,6 @@
             <phase>compile</phase>
             <configuration>
               <target>
-                <ant target="clean" />
 				<ant target="jar" />
               </target>
             </configuration>
