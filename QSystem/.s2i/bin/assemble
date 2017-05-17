@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# install javafx
+# add extra build steps here.
 
-yum update -qq && yum install -y openjfx
+
 
 
 # run original script.
