@@ -345,7 +345,7 @@
                                     <goal>copy-dependencies</goal>
                                 </goals>
                                 <configuration>
-                                    <outputDirectory>${project.build.directory}/lib</outputDirectory>
+                                    <outputDirectory>${project.basedir}/lib</outputDirectory>
                                     <useRepositoryLayout>true</useRepositoryLayout>
                                 </configuration>
                             </execution>
@@ -356,7 +356,7 @@
                                     <goal>build-classpath</goal>
                                 </goals>
                                 <configuration>
-                                    <outputFile>${project.build.directory}/lib/classpath</outputFile>
+                                    <outputFile>${project.basedir}/lib/classpath</outputFile>
                                     <localRepoProperty>lib</localRepoProperty>
                                 </configuration>
                             </execution>
@@ -371,7 +371,8 @@
             <phase>compile</phase>
             <configuration>
               <target>
-                <ant target="jar" />
+                <ant target="clean" />
+				<ant target="jar" />
               </target>
             </configuration>
             <goals>
