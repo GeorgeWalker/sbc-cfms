@@ -346,7 +346,7 @@
                                 </goals>
                                 <configuration>
                                     <outputDirectory>${project.basedir}/lib</outputDirectory>
-                                    <useRepositoryLayout>true</useRepositoryLayout>
+                                    
                                 </configuration>
                             </execution>
                             <execution>
