@@ -32,11 +32,11 @@ import ru.apertum.qsystem.client.forms.FAdmin;
  * Ячейка сетки календаря
  * @author Evgeniy Egorov
  */
-public class TableСell extends JLabel implements TableCellRenderer {
+public class TableCell extends JLabel implements TableCellRenderer {
 
     final int year;
 
-    public TableСell(Integer year) {
+    public TableCell(Integer year) {
         this.year = year;
     }
 
