@@ -1,9 +1,0 @@
-#!/bin/bash
-
-# add extra build steps here.
-
-
-
-
-# run original script.
-/usr/local/s2i/assemble
