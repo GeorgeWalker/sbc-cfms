@@ -188,7 +188,7 @@ is divided into following sections:
         </condition>
         <property name="javadoc.encoding.used" value="${source.encoding}"/>
         <property name="includes" value="**"/>
-        <property name="excludes" value="src/ru/apertum/qsystem/client/**"/>
+        <property name="excludes" value="/src/ru/apertum/qsystem/client/common/WysiwygDlg.java"/>
         <property name="do.depend" value="false"/>
         <condition property="do.depend.true">
             <istrue value="${do.depend}"/>
