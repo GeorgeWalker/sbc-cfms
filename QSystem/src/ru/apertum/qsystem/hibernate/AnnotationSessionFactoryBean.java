@@ -194,7 +194,7 @@ public class AnnotationSessionFactoryBean implements Action {
                 name = System.getenv ("MYSQL_DATABASE");
             
             flag = false;
-            QLog.l().logger().info("DB server '" + name + " driver=" + driver + "' url=" + url);
+            QLog.l().logger().warn("DB server '" + name + " driver=" + driver + "' url=" + url);
         }
     }
 
