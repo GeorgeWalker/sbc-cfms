@@ -7,8 +7,4 @@
 #	https://github.com/openshift/source-to-image/blob/master/docs/builder_image.md
 #
 
-# copy over the languages file.
-mkdir /opt/app-root/src/source/dist/languages
-cp /tmp/src/languages/* /opt/app-root/src/source/dist/languages
-
 exec java -Djava.security.egd=file:/dev/./urandom -jar /opt/app-root/src/source/dist/QSystem.jar --http-server 8080 $APP_OPTIONS
