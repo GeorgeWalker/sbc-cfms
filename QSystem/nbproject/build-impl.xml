@@ -1044,7 +1044,7 @@ is divided into following sections:
     <target name="-post-jar">
 	    <mkdir dir="${dist.jar.dir}../../languages"/>
 		
-		<copy todir="${dist.jar.dir}../../languages">
+		<copy todir="${dist.jar.dir}../../../languages">
             <fileset dir="${basedir}/languages" includes="*.jar"/>
         </copy>
     </target>
