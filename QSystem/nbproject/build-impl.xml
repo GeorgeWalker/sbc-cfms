@@ -1044,10 +1044,8 @@ is divided into following sections:
     <target name="-post-jar">
 	    <mkdir dir="${dist.jar.dir}/languages"/>
 		<copy todir="${dist.jar.dir}/languages">
-            <fileset dir="${basedir}/source/languages" includes="*.jar"/>
+            <fileset dir="${basedir}/languages" includes="*.jar"/>
         </copy>
-        <!-- Empty placeholder for easier customization. -->
-        <!-- You can override this target in the ../build.xml file. -->
     </target>
     <target depends="init,compile,-pre-jar,-do-jar-without-libraries,-do-jar-with-libraries,-post-jar" name="-do-jar"/>
     <target depends="init,compile,-pre-jar,-do-jar,-post-jar" description="Build JAR." name="jar"/>
