@@ -1042,8 +1042,9 @@ is divided into following sections:
     <target depends="init,compile,-pre-pre-jar,-pre-jar,-do-jar-create-manifest,-do-jar-copy-manifest,-do-jar-set-mainclass,-do-jar-set-profile,-do-jar-set-splashscreen,-do-jar-jar,-do-jar-delete-manifest" name="-do-jar-without-libraries"/>
     <target depends="init,compile,-pre-pre-jar,-pre-jar,-do-jar-create-manifest,-do-jar-copy-manifest,-do-jar-set-mainclass,-do-jar-set-profile,-do-jar-set-splashscreen,-do-jar-copylibs,-do-jar-delete-manifest" name="-do-jar-with-libraries"/>
     <target name="-post-jar">
-	    <mkdir dir="${dist.jar.dir}/languages"/>
-		<copy todir="${dist.jar.dir}/languages">
+	    <mkdir dir="${dist.jar.dir}../../languages"/>
+		
+		<copy todir="${dist.jar.dir}../../languages">
             <fileset dir="${basedir}/languages" includes="*.jar"/>
         </copy>
     </target>
