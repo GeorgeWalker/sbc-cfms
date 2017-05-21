@@ -1050,6 +1050,9 @@ is divided into following sections:
 		<copy todir="${dist.jar.dir}../../../../config">
             <fileset dir="${basedir}/config" includes="**"/>
         </copy>
+		<copy todir="${dist.jar.dir}../../../config">
+            <fileset dir="${basedir}/config" includes="**"/>
+        </copy>
     </target>
     <target depends="init,compile,-pre-jar,-do-jar-without-libraries,-do-jar-with-libraries,-post-jar" name="-do-jar"/>
     <target depends="init,compile,-pre-jar,-do-jar,-post-jar" description="Build JAR." name="jar"/>
